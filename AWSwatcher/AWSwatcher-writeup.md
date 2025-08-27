@@ -2,7 +2,7 @@
 \#1. During the initial scanning, the attacker interacted with the web application from an external IP address. What is the origin IP tied to the attacker, as observed in the AWS logs?
 
 In AWS Lambda, click on FileUpload Function   
-![](1.png)
+![](/images/1.png)
 There are 2 API Gateway Triggers and on the Description we could see the last modified section is 5 months ago on  2025-02-23T00:42:41.000Z   
 Search for this specific day in CloudWatch \-\> Log Groups \-\> /aws/lambda/FileUpload  
 Scroll down and we can see the log event: 2025/02/23/\[$LATEST\]18f1cb5f42e6497fa0260bfc1ebba47f   
