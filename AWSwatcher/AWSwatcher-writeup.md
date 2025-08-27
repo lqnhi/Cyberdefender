@@ -1,4 +1,4 @@
-**AWS Watcher**   
+# AWS Watcher
 \#1. During the initial scanning, the attacker interacted with the web application from an external IP address. What is the origin IP tied to the attacker, as observed in the AWS logs?
 
 In AWS Lambda, click on FileUpload Function   
