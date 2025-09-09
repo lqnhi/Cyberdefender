@@ -22,7 +22,10 @@ Uses common obfuscation and evasion techniques:
 - Hidden PowerShell window (-WindowStyle Hidden)
 - Execution policy bypass (-ExecutionPolicy Bypass)
 - No profile (-NoProfile)
+
 ![](images/2.png)
+
+So the URL “from which the first malware stage was installed”, the correct answer is the URL of mdm.jpg.
 
 QUESTION 2: Which hosting provider owns the associated IP address?
 The IP address can be found easily, which is 45.126.209.4 
@@ -37,6 +40,7 @@ Analyze the mdm.jpg file, we found the script with a long hex blob stored in the
 2. I copied this hex string to Cyberchef using "From Hex" 
 3. Then, I download the ouput into a download.dat file
 4. To check for SHA256, I use sha256 sum download.dat (or whatever you save your output name)
+
 ![](images/4.png)
 ![](images/5.png)
 
@@ -44,24 +48,29 @@ Analyze the mdm.jpg file, we found the script with a long hex blob stored in the
 QUESTION 4: What is the malware family label based on Alibaba?
 
 Using the SHA256 hash from Question 3, then go to VirusTotal, we can find the family label for this malware
+
 ![](images/6.png)
 
 
 QUESTION 5: What is the timestamp of the malware's creation?
 
 In the History part of Details section, we can find the Creation of this malware
+
 ![](images/7.png)
 
 QUESTION 6: Which LOLBin is leveraged for stealthy process execution in this script? Provide the full path.
 
 For this part, I look up the information for [LOLBin](https://socprime.com/blog/what-are-lolbins/)
 You can write python or any other type of language to extract from the script, but this one is simple and we can see clearly from the script 
+
 ![](images/8.png)
+
 Answer: C:\Windows\Microsoft.NET\Framework\v4.0.30319\RegSvcs.exe
 
 QUESTION 7: The script is designed to drop several files. List the names of the files dropped by the script.
 
 From the script, we can see a bunch of files being dropped 
+
 ![](images/9.png)
 ![](images/10.png)
 ![](images/11.png)
