@@ -67,7 +67,7 @@ Answer: T1078.004
 
 \#7. A server error inadvertently disclosed a temporary AWS access key in the debug logs. What is the AccessKeyId value that was leaked?  
 ![](images/17.png)
-Just from question 6, we can also have the answer for accessKeyId: ASIASFUIRZ5AETONKITQ
+Just from question 6, we can also have the answer for accessKeyId
 
 \#8. A critical alert was triggered when the attacker invoked an API to retrieve temporary credentials. What is the Event ID of the GetRole API call?
 
