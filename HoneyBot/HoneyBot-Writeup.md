@@ -1,5 +1,7 @@
 **HoneyBOT Lab Writeup**
 
+[HoneyBOT Lab](https://cyberdefenders.org/blueteam-ctf-challenges/honeybot/)
+
 Scenario: A PCAP analysis exercise highlighting attacker's interactions with honeypots and how automatic exploitation works.. (Note that the IP address of the victim has been changed to hide the true location.)
 
 As a soc analyst, analyze the artifacts and answer the questions.
